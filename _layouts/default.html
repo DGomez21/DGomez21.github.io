@@ -1,46 +1,57 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-<head>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
-<meta name="description" content="description"/>
-<meta name="keywords" content="keywords"/> 
-<meta name="author" content="author"/> 
-<link rel="stylesheet" type="text/css" href="/default.css" media="screen"/>
-<title>Multi Blog Site with Jekyll</title>
-</head>
+    {% include meta.html %}
 
-<body>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-<div class="container">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-	<div class="navigation">
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
 
-		<div class="title">
-			<h1>Multi Blog Site with Jekyll</h1>
-			<h2>- The beauty of Jekyll -</h2>
-		</div>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
-		<a href="/blog1/index.html">Blog 1</a>
-		<a href="/blog2/index.html">Blog 2</a>
-		<a href="/blog3/index.html">Blog 3</a>
-		<a href="/blog4/index.html">Blog 4</a>
-		<div class="clearer"><span></span></div>
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
 
-	</div>
+          <nav>
+            <a href="/blog1/index.html">Blog</a>
+            <a href="/blog2/index.html">Writing</a>
+            <a href="/blog3/index.html">Get_Rich</a>
+            <a href="/blog4/index.html">Food_Selection</a>
+            <a href="{{ site.baseurl }}/random">Random_Thoughts</a>
+            <a href="{{ site.baseurl }}/reading">Reading_List</a>
+            <a href="{{ site.baseurl }}/projects">Project's_I'm_Working_On</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
 
-	<div class="holder_top"></div>
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
 
-	<div class="holder">
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
 
-		{{ content }}		
-
-	</div>
-
-	<div class="footer">&copy; 2006 <a href="index.html">Website.com</a>. Valid <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> &amp; <a href="http://validator.w3.org/check?uri=referer">XHTML</a>. Template design by <a href="http://templates.arcsin.se">Arcsin</a>
-	</div>
-
-</div>
-</body>
+    {% include analytics.html %}
+  </body>
 </html>
