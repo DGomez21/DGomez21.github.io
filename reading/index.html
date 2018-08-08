@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Writing
-category: writing
+title: Reading
+category: reading
 ---
 <div class="posts">
 {% for post in site.posts %}      
-  {% if post.categories contains 'writing' %}
+  {% if post.categories contains 'reading' %}
 	<article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
