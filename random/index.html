@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Blog1
-category: blog4
+title: Random
+category: random
 ---
 <div class="posts">
 {% for post in site.posts %}      
-  {% if post.categories contains 'blog4' %}
+  {% if post.categories contains 'random' %}
 	<article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
