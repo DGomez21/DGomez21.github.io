@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Blog1
-category: blog1
+title: Writing
+category: writing
 ---
 <div class="posts">
 {% for post in site.posts %}      
-  {% if post.categories contains 'blog1' %}
+  {% if post.categories contains 'writing' %}
 	<article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
