@@ -1,0 +1,10 @@
+---
+layout: post
+title: Lifter
+---
+
+All of this year and next year I'm remaking all my old projects into actually working projects. Starting with my idea of lifter
+which is an app that allows you to find a gym partner that goes to your gym anyway. OPriginally made in react-native but now
+I'm trying it first with react and mongo then moving over to react-native so I can have a web app and a mobile app.
+
+BYE!!!
