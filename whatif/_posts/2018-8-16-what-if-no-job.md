@@ -5,8 +5,8 @@ title: 'what if I lost my job'
 ---
 
 What if I lost my job.
-Problems/Fears:
 
+Problems/Fears:
 - No more money
 - More stressed based on debts
 
