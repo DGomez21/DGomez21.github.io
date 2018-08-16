@@ -1,7 +1,8 @@
 ---
 layout: post
+category: writing
+title: 'This is a poem about murder'
 ---
-
 A Poison Tree
 BY WILLIAM BLAKE
 
