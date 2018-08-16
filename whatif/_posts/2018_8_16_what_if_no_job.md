@@ -1,7 +1,7 @@
 ---
 layout: post
-title: What If I lost my job
-categories: what_if
+category: whatif
+title: 'what if I lost my job'
 ---
 
 What if I lost my job.
