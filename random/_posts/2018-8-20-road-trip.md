@@ -4,7 +4,9 @@ category: random
 title: 'ROAD TRIP!!!'
 ---
 
-Tobermory![_config.yml]({{ site.baseurl }}/images/turquoise-water-in-tobermory.jpg)
+Tobermory!
+
+[_config.yml]({{ site.baseurl }}/images/turquoise-water-in-tobermory.jpg)
 
 
 Going to some place called Tobermory for reasons that are beyond my control.
